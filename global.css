@@ -1,0 +1,257 @@
+:root {
+    /*colors*/
+
+
+    --main-text-lg-color:#E50815;
+    --main-bg-color:#000;
+    --main-text-color:#fff;
+    --main-grey-color:#222;
+    --main-red-color:#f40612;
+    --secondary-grey-color:#303030;
+    
+     /*font size*/
+     --fs-16: 16px;
+     --fs-18: 18px;
+     --fs-20: 20px;
+     --fs-24: 24px;
+     --fs-26: 26px;
+     --fs-28: 28px;
+     --fs-32: 32px;
+     --fs-40: 40px;
+     --fs-48: 48px;
+     --fs-64: 64px;
+    
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "Roboto", serif;
+}
+
+
+/* Valores padrão para dispositivos movéis*/
+
+h1 {
+    font-size: var(--fs-28);
+    font: 600;
+
+}
+
+h2, h3 {
+    font-size: var(--fs-18);
+    font: 400;
+
+}
+
+h5 {
+    font-size: var(--fs-16);
+    font: 400;
+
+}
+
+/* Bootstrap */
+
+.btn {
+    border-radius: 0;
+    padding:8px 16px;
+}
+
+.btn-danger{
+    background: var(--main-red-color);
+}
+
+/*  custom style / navbar*/
+
+.navbar{
+    background: transparent;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-brand{
+    color: var(--main-text-lg-color);
+    font-weight: bold ;
+    font-size: var(--fs-24);
+    letter-spacing: -2px;
+}
+
+
+main{ 
+
+    
+    background: linear-gradient(90deg, 
+    rgba(0,0,0,0.8) 10%, 
+    rgba(0,0,0,0) 40%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0,0,0,0.8) 100%),
+
+    url("../assets/img/capafilmes.png");
+    background: cover;
+}
+
+
+.main-content {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    
+}
+
+.main-content_input-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.main-content_input-container input {
+    flex: 1;
+    max-width: 500px;
+    padding: 12px;
+    width: 100%;
+}
+
+.main-content {
+    padding: 104px 0;
+}
+
+
+.benefits-section{
+    padding: 32px 32px 40px 32px;
+    text-align: center;
+    border-bottom: 8px solid var(--main-grey-color) ;
+}
+
+.benefits-section:first-of-type {
+    border-top: 8px solid var(--main-grey-color);
+}
+
+
+.benefits-content div {
+padding: 16px;
+}
+
+
+.benefits-content img {
+    width: 100%;
+    height: auto;
+}
+
+.accordion{
+
+   
+  
+
+   
+    padding-top: 15px;
+    height: auto;
+}
+
+
+.accordion-item{
+  
+   margin: 7px;
+    --bs-accordion-border-color: none;
+    background-color: var(--main-grey-color);
+    color: var(--main-text-color);
+}
+
+
+.accordion-button{
+    color: var(--main-text-color);
+    background-color: var(--main-grey-color);
+}
+
+button.accordion-button.collapsed{
+    color: var(--main-text-color);
+}
+
+footer{
+    margin-top: 10px;
+    padding:15px ;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-grey-color);
+    color: var(--main-text-color);
+    font-size: var(--fs-18);
+    text-align: center;
+}
+
+/*carrosel */
+
+
+  
+  .center {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .carrossel {
+    margin-top: 15px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .carrossel .switchLeft,
+  .carrossel .switchRight {
+    list-style-type: none;
+    color:var(--main-text-color);
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    line-height: 250px;
+    font-size: 40px;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+    background-color:var(--main-bg-color);
+    cursor: pointer;
+  }
+  
+  .carrossel .switchLeft {
+    position: absolute;
+    left: 0;
+  }
+  
+  .carrossel .switchRight {
+    position: absolute;
+    right: 0;
+  }
+  
+  .carrosselBox {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrosselBox img {
+    min-width: 147px;
+    max-width: 147px;
+    height: 210px;
+    background-size: cover;
+    background-color: rgb(226, 89, 89);
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+  }
+  
+  .carrosselBox img:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  select{
+   padding: 10px;
+   margin: 0 20px;
+  }

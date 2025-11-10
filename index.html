@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Idioma padrão
+                includedLanguages: 'en,pt,es,fr,de', // Idiomas disponíveis
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+  
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    
+    <!-- font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- end font google-->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!--Custom css-->
+
+        <link rel="stylesheet" href="global.css">
+
+        <!-- end custom css-->
+
+    <title>NetFlix</title>
+
+  </head>
+  <body>
+    
+
+
+<nav class="navbar px-sm-2">
+    <a href="#" class="navbar-brand">NetFlix</a>
+
+    
+    <div id="google_translate_element"></div>
+    
+
+    <div >
+        <button class="btn btn-danger" onclick="login()"> Entrar</button>
+    </div>
+    
+</nav>
+ 
+<main class="conteiner-fluid">
+    <div class="conteiner">
+      <div class="main-content">
+        <h1>Acesso ilimitado a filmes, séries e muito mais</h1>
+
+        <h2 class="mt-3 px-2">A partir de 7,99 €. Cancele quando quiser.</h2>
+        <h3 class="mt-4 px-2">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</h3>
+        <div class="main-content_input-container mt-3 ">
+            <input type="text" placeholder="Email">
+            <button class="btn btn-danger mt-3">Começar ></button>
+        </div>
+    </div>
+</div>
+</main>
+<section class="container-fluid benefits-section">
+    <div class="container px-0">
+        <div class="row benefits-content text-center">
+            <div class="col-sm-12 col-lg-6 align-self-center">
+                <h1>Aproveite na TV</h1>
+                <h2>Assista em smart TV's Playstation, Xbox, Choromecast, Apple TV, aprelhos de Blu-ray e outros dispositivos.</h2> 
+               
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <img src="https://st3.depositphotos.com/29252258/35699/i/600/depositphotos_356995562-stock-photo-march-2020-television-friends-sitcom.jpg" alt="NetFlix">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid benefits-section">
+    <div class="container px-0">
+        <div class="row benefits-content text-center">
+            <div class="col-sm-12 col-lg-6 align-self-center">
+                <h1>Aproveite na smartphone</h1>
+                <h2>Assista em smart TV's Playstation, Xbox, Choromecast, Apple TV, aprelhos de Blu-ray e outros dispositivos.</h2> 
+               
+            </div>
+            <div class="col-sm-12 col-lg-6 order-lg-first">
+                <img src="https://st5.depositphotos.com/5661178/66352/i/450/depositphotos_663523308-stock-photo-chiang-mai-thailand-jun-2023.jpg" alt="NetFlix">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--carrosel-->
+
+<div class="center">
+  <div class="carrossel">
+    <div class="carrosselBox">
+      <!-- aqui fica o conteudo dinamico -->
+    </div>
+    <a
+    class="switchLeft sliderButton btnstyle carousel-control-prev-icon"
+    onclick="sliderScrollLeft()"
+  ></a>
+  <a
+    class="switchRight sliderButton btnstyle carousel-control-next-icon"
+    onclick="sliderScrollRight()"
+  ></a>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<section id="faq" class="py-5">
+    <h2 class="my-5 text-center">FAQ</h2>
+
+    <!-- faq-->
+
+    <div class="container card-faq w-75">
+
+
+        <div class="accordion  accordion-flush col-sm-12  " id="accordionFlushExample">
+
+        
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    O que é a netflix  
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Netflix é um serviço de streaming que oferece uma grande variedade de séries de televisão, filmes, títulos de animé, documentários e outros conteúdos premiados que podem ser vistos em milhares de dispositivos com uma ligação à internet.
+                  Pode ver tudo o que quiser, quando quiser, sem anúncios. Tudo por um baixo custo mensal. Há sempre novos conteúdos para descobrir e todas as semanas são adicionados novos filmes e séries!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Quanto custa uma NetFlix ?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Veja a Netflix no seu smartphone, tablet, Smart TV, computador ou dispositivo de streaming, tudo isto por um preço mensal fixo. Os preços dos planos variam entre 7,99 € e 15,99 € por mês. Sem custos adicionais, nem contratos. </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 Como posso cancelar?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A Netflix é flexível. Sem contratos exigentes nem fidelização. Pode cancelar facilmente a sua conta online com dois cliques. Sem custos de cancelamento: ative ou cancele a sua conta em qualquer altura.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+             
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  O que posso ver na NetFlix?
+                </button>
+              </h2> 
+            
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A Netflix tem uma vasta biblioteca de originais Netflix premiados, títulos de animé, filmes, documentários, séries, programas de televisão e muitos outros conteúdos. Veja os títulos que quiser, quando quiser.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  A NetFlix é adequado para crianças?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A adesão à Netflix inclui um perfil Crianças para dar aos pais um melhor controlo, bem como um espaço dedicado às crianças, com filmes e séries para toda a família.
+
+                  Os perfis Crianças incluem funcionalidades de controlo parental com acesso por PIN, que lhe permitem alterar a classificação etária dos conteúdos que as suas crianças podem ver e bloquear títulos específicos.</div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+   
+</section>
+<div class="container card-faq w-65">
+<h1 class="text-center">Quer começar a ver ? <br>Introduza o seu e-mail para criar ou reativar a sua conta.</h1>
+</div>
+
+<div class="main-content_input-container mt-3  input-two">
+  <input type="text" placeholder="Email">
+  <button class="btn btn-danger mt-3">Começar ></button>
+</div>
+
+<footer>Netflix Portugal</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="script.js"></script>
+
+    
+
+
+    
+  
+</body>
+</html>
+
+
+
+<!--
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev" onclick="sliderScrollLeft()" >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden" >Previous</span>
+    </button>
+    
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next" onclick="sliderScrollRight()">
+      <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    -->
